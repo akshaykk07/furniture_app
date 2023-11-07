@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:furniture_app/const/theam.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../screens/product_screen.dart';
+
 class Best_sellingcard extends StatelessWidget {
   final String img;
   final String name;
@@ -19,7 +21,7 @@ class Best_sellingcard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Padding(
-        padding: const EdgeInsets.only(right: 10),
+        padding: const EdgeInsets.only(right: 20),
         child: Container(
           height: 110,
           width: double.infinity,
@@ -33,7 +35,6 @@ class Best_sellingcard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   child: Image.network(
                     img,
-                    // "https://cdn.decornation.in/wp-content/uploads/2020/07/modern-velvet-dining-chairs.jpg"
                   ),
                 ),
                 const SizedBox(
@@ -76,18 +77,27 @@ class Best_sellingcard extends StatelessWidget {
       ),
       Positioned(
         bottom: 15,
-        right: 25,
-        child: Container(
-          height: 30,
-          width: 30,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(6),
-            color: Colors.black,
-          ),
-          child: const Center(
-            child: Icon(
-              Icons.keyboard_arrow_right_sharp,
-              color: white,
+        right: 35,
+        child: InkWell(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(
+              builder: (context) {
+                return Product_screen();
+              },
+            ));
+          },
+          child: Container(
+            height: 30,
+            width: 30,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              color: Colors.black,
+            ),
+            child: const Center(
+              child: Icon(
+                Icons.keyboard_arrow_right_sharp,
+                color: white,
+              ),
             ),
           ),
         ),

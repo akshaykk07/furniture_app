@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:furniture_app/widgets/Cart_icon.dart';
+import 'package:furniture_app/widgets/Custom_appbar.dart';
 
 import '../const/theam.dart';
 
@@ -35,19 +37,11 @@ class Search extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10))),
           ),
         ),
-        const SizedBox(
+         SizedBox(
           height: 55,
           width: 60,
           child: Center(
-            child: Stack(
-              children: [Icon(
-                Icons.shopping_cart_outlined,
-                color: Colors.black,
-                size: 30,
-              ),
-              Positioned(left: 20,
-                  child: CircleAvatar(radius: 5,backgroundColor: Colors.red,))]
-            ),
+            child: Cart_Icon(msg: true)
           ),
         ),
       ],

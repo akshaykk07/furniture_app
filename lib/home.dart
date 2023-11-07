@@ -52,26 +52,27 @@ class home extends StatelessWidget {
             height: 20,
           ),
           Expanded(
-              child: ListView(children: const [
-            Maintext(text: "Explore"),
-            SizedBox(
-              height: 20,
-            ),
-            Product_list(),
-            SizedBox(
-              height: 20,
-            ),
-            Maintext(text: "Best Selling"),
-            SizedBox(
-              height: 10,
-            ),
-            Best_sellingcard(
-                name: "Minimal Chair",
-                sname: "Most one",
-                price: "\$350.00",
-                img:
-                    "https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg")
-          ])),
+            child: ListView(children: const [
+              Maintext(text: "Explore"),
+              SizedBox(
+            height: 20,
+              ),
+              Product_list(),
+              SizedBox(
+            height: 20,
+              ),
+              Maintext(text: "Best Selling"),
+              SizedBox(
+            height: 10,
+              ),
+              Best_sellingcard(
+              name: "Minimal Chair",
+              sname: "Most one",
+              price: "\$350.00",
+              img:
+                  "https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg")
+            ]),
+          ),
         ]),
       ),
     );

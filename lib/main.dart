@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_app/home.dart';
+import 'package:furniture_app/screens/product_screen.dart';
 
 void main() {
   runApp(const MyApp());
