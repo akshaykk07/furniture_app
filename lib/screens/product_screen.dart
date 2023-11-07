@@ -18,7 +18,11 @@ class Product_screen extends StatelessWidget {
                 borderRadius:
                     BorderRadius.only(bottomLeft: Radius.circular(60)),
                 child: Image.network(
-                  "https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg",
+                  //"https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg"
+                //  "https://img.freepik.com/premium-photo/pink-armchair-vase-floor-3d-rendering_936251-4861.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais"
+               "https://ii1.pepperfry.com/media/catalog/product/a/e/1100x1210/aesthetic-fabric-iconic-chair-in-pink-colour-aesthetic-fabric-iconic-chair-in-pink-colour-imu86m.jpg"
+               //"https://m.media-amazon.com/images/I/71WvJUFPSNL._AC_SX679_.jpg"
+                ,
                   height: double.infinity,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -39,7 +43,7 @@ class Product_screen extends StatelessWidget {
                           style: GoogleFonts.poppins(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              color: Colors.green),
+                              color: pink),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -99,7 +103,7 @@ class Product_screen extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(15),
                                       color: Colors.white,
                                       border: Border.all(
-                                          color: Colors.green, width: 3)),
+                                          color: pink, width: 3)),
                                   child: Center(
                                     child: Container(
                                       height: 12,
@@ -107,7 +111,7 @@ class Product_screen extends StatelessWidget {
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(10),
-                                          color: Colors.green),
+                                          color: pink),
                                     ),
                                   ),
                                 ),
@@ -150,7 +154,7 @@ class Product_screen extends StatelessWidget {
                         ),
                         Text(
                           "Buy Leroy Fabric Upholstered Wingback Arm Chair (Beige) online in India at best price. Shop From wide range of Chairs and get best discount upto @50%.",
-                          style: GoogleFonts.roboto(color: Colors.grey),
+                          style: GoogleFonts.roboto(color: Colors.black54),
                         )
                       ]),
                 ),
@@ -159,8 +163,8 @@ class Product_screen extends StatelessWidget {
         Align(
           alignment: Alignment.bottomRight,
           child: Container(
-            height: 60,
-            width: 180,
+            height: 65,
+            width: 220,
             decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(50),
@@ -176,7 +180,7 @@ class Product_screen extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 400,
+          top: 404,
           right: 30,
           child: Container(
             height: 40,

@@ -14,7 +14,7 @@ class Search extends StatelessWidget {
       children: [
         Container(
           height: 48,
-          width: 280,
+          width: 300,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             boxShadow: const [
@@ -37,13 +37,16 @@ class Search extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10))),
           ),
         ),
-         SizedBox(
-          height: 55,
-          width: 60,
-          child: Center(
-            child: Cart_Icon(msg: true)
-          ),
+         Padding(
+           padding: const EdgeInsets.only(right: 10),
+           child: SizedBox(
+            height: 55,
+            width: 60,
+            child: Center(
+              child: Cart_Icon(msg: true)
+            ),
         ),
+         ),
       ],
     );
   }

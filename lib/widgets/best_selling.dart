@@ -25,8 +25,13 @@ class Best_sellingcard extends StatelessWidget {
         child: Container(
           height: 110,
           width: double.infinity,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20), color: white),
+          decoration: BoxDecoration(boxShadow: const [
+            BoxShadow(
+              offset: Offset(1, 5),
+              color: Colors.grey,
+              blurRadius: 5.5,
+            ),
+          ], borderRadius: BorderRadius.circular(20), color: white),
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: Row(

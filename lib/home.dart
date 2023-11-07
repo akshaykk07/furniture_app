@@ -70,7 +70,9 @@ class home extends StatelessWidget {
               sname: "Most one",
               price: "\$350.00",
               img:
-                  "https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg")
+                 // "https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg"
+              "https://ii1.pepperfry.com/media/catalog/product/a/e/1100x1210/aesthetic-fabric-iconic-chair-in-pink-colour-aesthetic-fabric-iconic-chair-in-pink-colour-imu86m.jpg"
+                   )
             ]),
           ),
         ]),
