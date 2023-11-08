@@ -4,8 +4,8 @@ import 'package:furniture_app/const/theam.dart';
 import 'package:furniture_app/widgets/Custom_appbar.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Product_screen extends StatelessWidget {
-  const Product_screen({super.key});
+class Product_screen2 extends StatelessWidget {
+  const Product_screen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,9 @@ class Product_screen extends StatelessWidget {
             flex: 6,
             child: ClipRRect(
                 borderRadius:
-                    BorderRadius.only(bottomLeft: Radius.circular(60)),
+                BorderRadius.only(bottomLeft: Radius.circular(60)),
                 child: Image.network(
-                  //"https://ii1.pepperfry.com/media/catalog/product/c/l/494x544/clint-sheesham-wood-armchair-in-provincial-teak-finish-by-woodsworth-clint-sheesham-wood-armchair-in-hemtnz.jpg"
-                  //  "https://img.freepik.com/premium-photo/pink-armchair-vase-floor-3d-rendering_936251-4861.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais"
-                  "https://ii1.pepperfry.com/media/catalog/product/a/e/1100x1210/aesthetic-fabric-iconic-chair-in-pink-colour-aesthetic-fabric-iconic-chair-in-pink-colour-imu86m.jpg"
-                  //"https://m.media-amazon.com/images/I/71WvJUFPSNL._AC_SX679_.jpg"
-                  ,
+                  "https://www.at-home.co.in/cdn/shop/products/LEROYARmchairLS_1024x1024.jpg?v=1660115634",
                   height: double.infinity,
                   width: double.infinity,
                   fit: BoxFit.cover,
@@ -39,7 +35,7 @@ class Product_screen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "\$115.00",
+                          "\$250.00",
                           style: GoogleFonts.poppins(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
@@ -49,7 +45,7 @@ class Product_screen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "Minimal Chair",
+                              "Wood Chair",
                               style: GoogleFonts.poppins(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w700,
@@ -102,16 +98,16 @@ class Product_screen extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
                                       color: Colors.white,
-                                      border:
-                                          Border.all(color: pink, width: 3)),
+                                      border: Border.all(
+                                          color: offwhite, width: 3)),
                                   child: Center(
                                     child: Container(
                                       height: 12,
                                       width: 12,
                                       decoration: BoxDecoration(
                                           borderRadius:
-                                              BorderRadius.circular(10),
-                                          color: pink),
+                                          BorderRadius.circular(10),
+                                          color: offwhite),
                                     ),
                                   ),
                                 ),
@@ -162,29 +158,19 @@ class Product_screen extends StatelessWidget {
         ]),
         Align(
           alignment: Alignment.bottomRight,
-          child: InkWell(
-            onTap: () {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text("Item Added to cart",style: GoogleFonts.poppins(),),
-                behavior: SnackBarBehavior.floating,
-                padding: EdgeInsets.all(20),
-                backgroundColor: Colors.pink,duration: Duration(seconds: 1),
-              ));
-            },
-            child: Container(
-              height: 65,
-              width: 220,
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(50),
-                  ),
-                  color: Colors.black),
-              child: Center(
-                child: Text(
-                  "+ Add to Cart",
-                  style: GoogleFonts.poppins(
-                      fontSize: 16, fontWeight: FontWeight.w500, color: white),
+          child: Container(
+            height: 65,
+            width: 220,
+            decoration: const BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(50),
                 ),
+                color: Colors.black),
+            child: Center(
+              child: Text(
+                "+ Add to Cart",
+                style: GoogleFonts.poppins(
+                    fontSize: 16, fontWeight: FontWeight.w500, color: white),
               ),
             ),
           ),
@@ -204,10 +190,10 @@ class Product_screen extends StatelessWidget {
                 ]),
             child: const Center(
                 child: Icon(
-              Icons.favorite,
-              color: Colors.red,
-              size: 25,
-            )),
+                  Icons.favorite,
+                  color: Colors.red,
+                  size: 25,
+                )),
           ),
         ),
         const CustomApp_bar(title: "product"),
